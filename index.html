@@ -1,1 +1,166 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clip Your Ride - Wybierz swój kask</title>
+    <style>
+        :root {
+            --bg-color: #0c0d12;
+            --card-bg: #14161f;
+            --card-border: #222533;
+            --card-hover-border: #ff4a5a;
+            --card-hover-bg: #191c29;
+            --text-main: #ffffff;
+            --text-muted: #888f9e;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .onboarding-container {
+            width: 100%;
+            max-width: 520px;
+            text-align: center;
+        }
+
+        .logo-icon {
+            width: 50px;
+            height: 50px;
+            margin: 0 auto 30px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-icon svg {
+            width: 100%;
+            height: 100%;
+            fill: #ff4a5a;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: 40px;
+            padding: 0 20px;
+        }
+
+        .options-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .option-card {
+            display: flex;
+            align-items: center;
+            background-color: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 8px;
+            padding: 18px 20px;
+            text-decoration: none;
+            color: var(--text-main);
+            font-size: 1.1rem;
+            font-weight: 600;
+            transition: all 0.2s ease-in-out;
+            text-align: left;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .option-card:hover {
+            border-color: var(--card-hover-border);
+            background-color: var(--card-hover-bg);
+            transform: translateY(-1px);
+            box-shadow: 0 5px 15px rgba(255, 74, 90, 0.1);
+        }
+
+        .card-icon {
+            margin-right: 16px;
+            display: flex;
+            align-items: center;
+            font-size: 1.3rem;
+        }
+
+        .card-text {
+            flex-grow: 1;
+        }
+
+        @media (max-width: 480px) {
+            h1 { font-size: 1.5rem; }
+            .option-card { padding: 14px 16px; font-size: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="onboarding-container">
+        
+        <div class="logo-icon">
+            <svg viewBox="0 0 24 24">
+                <path d="M12 2a10 10 0 0 0-10 10c0 1.9.52 3.68 1.42 5.2L5.4 15.2A6.94 6.94 0 0 1 5 12a7 7 0 0 1 7-7c1.4 0 2.7.4 3.8 1.1l1.8-1.8A9.94 9.94 0 0 0 12 2zm8.58 4.8L18.6 8.6A6.94 6.94 0 0 1 19 12a7 7 0 0 1-7 7c-1.4 0-2.7-.4-3.8-1.1l-1.8 1.8A9.94 9.94 0 0 0 12 22a10 10 0 0 0 10-10c0-1.9-.52-3.68-1.42-5.2z"/>
+            </svg>
+        </div>
+
+        <h1>Szukasz według marki?</h1>
+        <p class="subtitle">Wybierz markę swojego kasku, aby dopasować dedykowane mocowanie w naszym sklepie.</p>
+
+        <div class="options-list">
+            
+            <!-- TUTAJ ZAMIEŃ LINKI '#' NA ADRESY URL DO SWOJEGO SKLEPU -->
+            <a href="https://clip-your-ride.pl" class="option-card">
+                <span class="card-icon">🪖</span>
+                <span class="card-text">AGV</span>
+            </a>
+
+            <a href="https://clip-your-ride.pl" class="option-card">
+                <span class="card-icon">🪖</span>
+                <span class="card-text">Airoh</span>
+            </a>
+
+            <a href="https://clip-your-ride.pl" class="option-card">
+                <span class="card-icon">🪖</span>
+                <span class="card-text">Arai</span>
+            </a>
+
+            <a href="https://clip-your-ride.pl" class="option-card">
+                <span class="card-icon">🪖</span>
+                <span class="card-text">SHOEI</span>
+            </a>
+
+            <a href="https://clip-your-ride.pl" class="option-card" style="border-style: dashed; border-color: #ff4a5a;">
+                <span class="card-icon">📩</span>
+                <span class="card-text">Inna marka? Napisz do nas!</span>
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
 
